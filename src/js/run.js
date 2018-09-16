@@ -10,24 +10,6 @@
 */
 
 /**
- * A game state object. Its only requirement is that is have a property
- * called 'end' that holds a boolean.
- * @typedef {Object} State
- * @property {boolean} end
- * @property {...any} rest
- */
-
-/**
- * Game update function. Returns an array containing the DrawCall and the
- * updated State.
- * @typedef {function} Game
- * @param {State} state
- * @param {number} t
- * @param {number} dt
- * @returns {Promise.<DrawCall, State>}
- */
-
-/**
  * @function run
  * @param {Function} game - Game update function
  * @param {State} state0 - Intial state

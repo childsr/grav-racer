@@ -46,6 +46,7 @@ const crash = graphics => state0 => {
   
   // model
   const model = state => {
+    sfx.engine(false)
     const [_, endr] = retryBtn()
     const [__, endm] = mainBtn()
     const next = (()=>{

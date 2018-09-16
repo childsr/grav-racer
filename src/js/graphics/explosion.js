@@ -1,6 +1,6 @@
 const explosion = () => {
   const particles = mapr(10)(
-    i => {
+    () => {
       const [rd0, rd1] = [randr(0.5,2),randr(5,7)]
       const maxT = randr(0.5,1)
       const ease = t => t/maxT

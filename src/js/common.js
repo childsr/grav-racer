@@ -10,9 +10,9 @@ const randInt = (lo, hi = null) => (
     lo + Math.floor((hi-lo)*Math.random())
 )
 const randr = (lo, hi) => lo + (hi-lo)*Math.random()
-const forr = n => f => {
-  for (let i = 0; i < n; i++) f(i)
-}
+// const forr = n => f => {
+//   for (let i = 0; i < n; i++) f(i)
+// }
 const merge = objs => Object.assign({},...objs)
 const toPromise = val => new Promise(resolve => resolve(val))
 const map2 = f => arr1 => arr2 => arr1.map((a,i) => f(a,arr2[i]))
